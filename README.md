@@ -1,4 +1,4 @@
-# Face-rec-quad
+# Monkey Face Detection and Recognition
 Real-time face detection and recognition for macaque monkeys.
 
 Scripts:
