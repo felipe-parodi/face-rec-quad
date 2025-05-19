@@ -12,17 +12,6 @@ Next steps:
 - Label monkey IDs.
 - Finetune detection (YOLO) and recognition (ArcFace).
 
-
-Key terms:
-- pseudo-labeling
-
-Pipeline:
-- Face detection
-- Face alignment
-- Face recognition # diff from image classification
-
----
-
 ## Setup
 
 These instructions guide you through setting up a Conda environment for running the scripts, specifically using CPU for computations.
