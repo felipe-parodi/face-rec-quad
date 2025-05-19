@@ -113,8 +113,8 @@ def run_inference_on_video(model_path: str, video_path: str):
 
 if __name__ == '__main__':
     # --- Configuration ---
-    MODEL_PATH = r"A:\NonEnclosureProjects\inprep\PrimateFace\data\seb_faceid\yolo_face_detection_workspace\training_runs\weights\best.pt"
-    VIDEO_PATH = r"A:\NonEnclosureProjects\inprep\PrimateFace\data\seb_faceid\test_3min.mp4" 
+    MODEL_PATH = r"..\yolo_face_detection_workspace\training_runs\weights\best.pt"
+    VIDEO_PATH = r"..\test_3min.mp4" 
     # To use a webcam, set VIDEO_PATH = "0" (or other camera index)
 
     # Global CONFIDENCE_THRESHOLD, MAX_DETECTIONS, and IOU_THRESHOLD are defined at the top of the script

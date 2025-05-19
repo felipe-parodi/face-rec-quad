@@ -11,3 +11,12 @@ Next steps:
 - Collect larger dataset for training.
 - Label monkey IDs.
 - Finetune detection (YOLO) and recognition (ArcFace).
+
+
+Key terms:
+- pseudo-labeling
+
+Pipeline:
+- Face detection
+- Face alignment
+- Face recognition # diff from image classification

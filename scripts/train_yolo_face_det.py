@@ -11,10 +11,18 @@ from ultralytics import YOLO
 from ultralytics.data.converter import convert_coco
 import cv2
 
+
+'''
+# 1. converts coco data to yolo data (ultralytics)
+# 2. split data into train, val, test set
+# 3. create yaml file --> YOLO
+# 4. train YOLO model to detect faces
+# 5. evaluates it and shows some predictions 
+'''
+
 # --- Configuration ---
-# User-defined paths
-ORIGINAL_COCO_JSON_PATH = Path(r"A:\NonEnclosureProjects\inprep\PrimateFace\data\seb_faceid\det_labels.json")
-IMAGE_SOURCE_DIR = Path(r"A:\NonEnclosureProjects\inprep\PrimateFace\data\seb_faceid\train_imgs") # Where original images are if JSON paths fail
+ORIGINAL_COCO_JSON_PATH = Path(r"..\det_labels.json")
+IMAGE_SOURCE_DIR = Path(r"..\train_imgs") # Where original images are if JSON paths fail
 
 # Script-managed paths
 PROJECT_WORKSPACE_DIR = ORIGINAL_COCO_JSON_PATH.parent / "yolo_face_detection_workspace"
@@ -378,7 +386,7 @@ def plot_inference_results_grid(results, class_names: list, num_images_to_plot: 
             
             if i < len(axes):
                 axes[i].imshow(img_rgb)
-                axes[i].set_title(f"Result {i+1}") # You can customize title, e.g., with original path if available
+                axes[i].set_title(f"Result {i+1}")
                 axes[i].axis('off')
         except Exception as e:
             print(f"Error plotting result {i}: {e}")
